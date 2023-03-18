@@ -1,13 +1,6 @@
-  .Over-lay {
-    position: absolute;
-    width: 100vw;
-    height: 115vh;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    z-index: 5;
-  }
-
+body{
+  height: 10000px;
+}
 .navbar {
   background-color: transparent;
   z-index: 6;
