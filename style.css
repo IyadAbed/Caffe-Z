@@ -1,0 +1,28 @@
+  .Over-lay {
+    position: absolute;
+    width: 100vw;
+    height: 115vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+
+.navbar {
+  background-color: transparent;
+  z-index: 6;
+}
+
+.navbar-brand {
+  font-family: 'Clicker Script', cursive;
+}
+
+.landing {
+  background-image: url(./images/coffee_image.png);
+  min-height: calc(100vh - 82.14px);
+  background-size: 100% 100%;
+}
+
+.landing p {
+color: rgba(255, 255, 255, 0.5);
+}
