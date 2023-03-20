@@ -6,19 +6,16 @@
   while (costumer1 != "male" && costumer1 != "female") {
     costumer1 = prompt('Please enter your gender (male) or (female)');
   }
-}
-gender();
-
   if (costumer1 == 'male') {
     alert(`Welcome Mr ${costumer}`);
   }
-
+  
   else if (costumer1 == 'female') {
     alert(`Welcome Ms ${costumer}` );
   }
-  else {
-    alert('Welcome ' + costumer)
-  }
+}
+gender();
+
 
   let typeOfDrink =prompt("Do you prefer your drink hot or cold?");
   let typeOfTem =prompt('Please write down your drink☕')
