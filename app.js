@@ -2,9 +2,12 @@
 
   let costumer1 =prompt('Please enter your gender (male) or (female)');
 
+  function gender () {
   while (costumer1 != "male" && costumer1 != "female") {
     costumer1 = prompt('Please enter your gender (male) or (female)');
   }
+}
+gender();
 
   if (costumer1 == 'male') {
     alert(`Welcome Mr ${costumer}`);
