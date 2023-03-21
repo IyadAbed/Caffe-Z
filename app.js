@@ -1,40 +1,70 @@
-  let costumer = prompt("Please enter your name");
+setTimeout(() => {
+  let cName = prompt("Please enter your name");
 
-  let costumer1 =prompt('Please enter your gender (male) or (female)');
+  let gender = prompt("Please enter your gender (male) or (female)");
 
-  function gender () {
-  while (costumer1 != "male" && costumer1 != "female") {
-    costumer1 = prompt('Please enter your gender (male) or (female)');
+  function gender1() {
+    while (gender != "male" && gender != "female") {
+      gender = prompt("Please enter your gender (male) or (female)");
+    }
+    if (gender == "male") {
+      alert(`Welcome Mr ${cName}`);
+    } else if (gender == "female") {
+      alert(`Welcome Ms ${cName}`);
+    }
   }
-  if (costumer1 == 'male') {
-    alert(`Welcome Mr ${costumer}`);
-  }
-  
-  else if (costumer1 == 'female') {
-    alert(`Welcome Ms ${costumer}` );
-  }
-}
-gender();
+  gender1();
 
+  let typeOfTem = prompt("Do you prefer your drink hot or cold?");
+  let typeOfDrink = prompt("Please write down your drink☕");
+  alert("please wait the drink is being prepered");
 
-  let typeOfDrink =prompt("Do you prefer your drink hot or cold?");
-  let typeOfTem =prompt('Please write down your drink☕')
-  alert('please wait the drink is being prepered')
-  
-  if (costumer1 == 'male') {
-    console.log('Ok Mr ' + costumer + ' ' + 'your order is ' + typeOfDrink + ' ' + typeOfTem);
+  if (gender == "male") {
+    console.log(
+      "Ok Mr " + cName + " " + "your order is " + typeOfTem + " " + typeOfDrink
+    );
+  } else if (gender == "female") {
+    console.log(
+      "Ok Ms " + cName + " " + "your order is " + typeOfTem + " " + typeOfDrink
+    );
+  } else {
+    console.log(
+      "Ok " + cName + " " + "your order is " + typeOfTem + " " + typeOfDrink
+    );
   }
 
-  else if (costumer1 == 'female') {
-    console.log('Ok Ms ' + costumer + ' ' + 'your order is ' + typeOfDrink + ' ' + typeOfTem);
-  }
-  else {
-    console.log('Ok ' + costumer + ' ' + 'your order is ' + typeOfDrink + ' ' + typeOfTem);
-  }
-
-  let answer = [costumer, costumer1, typeOfDrink, typeOfTem];
+  let answer = [cName, gender, typeOfTem, typeOfDrink];
 
   for (let i = 0; i < answer.length; i++) {
     console.log(answer[i]);
   }
 
+  let sad = document.getElementById("customerInfo");
+  let div = document.createElement("div");
+  let par = document.createElement("p");
+  let ul = document.createElement("ul");
+  let li1 = document.createElement("li");
+  let li2 = document.createElement("li");
+  let li3 = document.createElement("li");
+
+  par.textContent = `${"Name :"} ${cName}`;
+  li1.textContent = `${"Gender :"} ${gender}`;
+  // li2.textContent = ("age : 26")
+  li3.textContent = `${"Drink"} ${typeOfTem} ${typeOfDrink}`;
+
+  // ul.appendChild(li1);
+  // ul.appendChild(li3);
+  // ul.appendChild(li2);
+
+  // div.appendChild(par);
+  // div.appendChild(ul);
+
+  // info.appendChild(div);
+
+  ul.appendChild(li1);
+  ul.appendChild(li3);
+
+  div.appendChild(par);
+  div.appendChild(ul);
+  sad.appendChild(div);
+}, 1000);
