@@ -1,4 +1,4 @@
-body{
+body {
   height: 10000px;
 }
 .navbar {
@@ -7,7 +7,7 @@ body{
 }
 
 .navbar-brand {
-  font-family: 'Clicker Script', cursive;
+  font-family: "Clicker Script", cursive;
 }
 
 .landing {
@@ -17,5 +17,5 @@ body{
 }
 
 .landing p {
-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
